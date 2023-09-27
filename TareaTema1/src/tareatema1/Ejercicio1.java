@@ -14,7 +14,7 @@ public class Ejercicio1 {
 		Scanner sc = new Scanner(System.in);
 		// Para poder usar decimales con un punto
 		sc.useLocale(Locale.US);
-		// Le pedimos al usuario el número
+		// Le pedimos al usuario que escriba un número
 		System.out.println("Escriba un número con decimales");
 		// Leemos el número
 		numero = sc.nextDouble();

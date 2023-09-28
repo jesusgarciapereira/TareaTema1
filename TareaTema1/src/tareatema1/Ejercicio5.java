@@ -3,7 +3,7 @@ package tareatema1;
 import java.util.Locale;
 import java.util.Scanner;
 
-public class Ejercico5 {
+public class Ejercicio5 {
 
 	public static void main(String[] args) {
 		// Declaramos las variables del polinomio

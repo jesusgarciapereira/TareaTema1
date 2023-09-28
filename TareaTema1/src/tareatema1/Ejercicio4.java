@@ -5,8 +5,10 @@ import java.util.Scanner;
 public class Ejercicio4 {
 
 	public static void main(String[] args) {
-		// Declaramos las variables
-		double base, altura, area;
+		// Declaramos las variables de la base y la altura (las que pediremos)
+		double base, altura;
+		// Declaramos la variable area
+		double area;
 		// Activamos el scanner para leer el teclado
 		Scanner sc = new Scanner(System.in);
 		// Le pedimos al usuario que escriba la base

@@ -9,6 +9,8 @@ public class Ejercicio2 {
 		int numero;
 		// Declaramos la variable sumarParaMultiplo
 		int sumarParaMultiplo;
+		// Declaramos la constante MULTIPLO_DE
+		final int MULTIPLO_DE = 7;
 		// Activamos el scanner para leer el teclado
 		Scanner sc = new Scanner(System.in);
 		// Le pedimos al usuario que escriba un número
@@ -16,9 +18,9 @@ public class Ejercicio2 {
 		// Leemos el número
 		numero = sc.nextInt();
 		// Establecemos la relación entre las variables
-		sumarParaMultiplo = (numero % 7 == 0) ? 0 : 7 - numero % 7;
+		sumarParaMultiplo = (numero % MULTIPLO_DE == 0) ? 0 : MULTIPLO_DE - numero % MULTIPLO_DE;
 		// Mostramos el resultado
-		System.out.println("Hay que sumarle " + sumarParaMultiplo + " para obtener un múltiplo de 7");
+		System.out.println("Hay que sumarle " + sumarParaMultiplo + " para obtener un múltiplo de " + MULTIPLO_DE);
 		// Cerramos el scanner
 		sc.close();
 	}

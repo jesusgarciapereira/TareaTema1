@@ -26,7 +26,7 @@ public class Ejercicio5 {
 		System.out.println("Elije un valor para c");
 		// Leemos la variable c
 		c = sc.nextDouble();
-		//Enseñamos cómo quedaría el polinomio con las variables definidas anteriormente
+		//Mostramos cómo quedaría el polinomio con las variables que hemos pedido
 		System.out.println("Así queda el polinomio: y = " + a + "x^2 + " + b + "x + " + c);
 		// Le pedimos al usuario que elija un valor para x
 		System.out.println("Ahora elije un valor para x");

@@ -18,7 +18,7 @@ public class Ejercicio9 {
 		// Leemos el segundo número
 		num2 = sc.nextInt();
 		// Mostramos el resultado
-		System.out.println("¿Los números " + num1 + " y " + num2 + " son iguales? " + (num1 == num2));
+		System.out.println("¿Los números " + num1 + " y " + num2 + " son iguales? \n" + (num1 == num2));
 		// Cerramos el scanner
 		sc.close();
 

@@ -21,9 +21,9 @@ public class Ejercicio8 {
 		final double POR_CIENTO_DESCUENTO = 5;
 		// Activamos el scanner para leer el teclado
 		Scanner sc = new Scanner(System.in);
-		// Texto informativo sobre los precios
+		// Mostramos un texto informativo sobre los precios
 		System.out.println("El precio de cada entrada para adultos es de " + PRECIO_ADULTO
-				+ " € y el precio de cada entrada para niños es de " + PRECIO_INFANTIL + " €");
+				+ " € y para niños es de " + PRECIO_INFANTIL + " €");
 		// Le pedimos al usuario que escriba el número de entradas para adultos
 		System.out.println("Introduzca el número de entradas para adultos que desea comprar");
 		// Leemos la cantidad

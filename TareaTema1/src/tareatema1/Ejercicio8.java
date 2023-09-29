@@ -19,11 +19,6 @@ public class Ejercicio8 {
 		final double PRECIO_ADULTO = 20;
 		final double PRECIO_INFANTIL = 15.50;
 		final double POR_CIENTO_DESCUENTO = 5;
-		/*
-		 * Decido declarar esta variable de tipo String para mostrar un texto que
-		 * definiré más adelante
-		 */
-		String aplicoDescuento;
 		// Activamos el scanner para leer el teclado
 		Scanner sc = new Scanner(System.in);
 		// Texto informativo sobre los precios
@@ -39,25 +34,19 @@ public class Ejercicio8 {
 		entradasInfantil = sc.nextInt();
 		// Establezcemos la relación de las variables para definir el precio total
 		precioTotal = entradasAdulto * PRECIO_ADULTO + entradasInfantil * PRECIO_INFANTIL;
+		// Establezcemos la relación de las variables para definir el precio con
+		// descuento
+		precioTotalConDescuento = precioTotal - precioTotal * POR_CIENTO_DESCUENTO / 100;
 		/*
-		 * Mediante un ternario aplicaremos el descuento en caso de que se cumpla la
-		 * condición del precio total mayor que 100 o, en caso de que no, mantendremos
-		 * el precio total sin descuento
+		 * Mostramos el resultado del precio total y mostrará también el precio con
+		 * descuento pero sólo en caso de que se cumpla la condición de superar los 100
+		 * euros
 		 */
-		precioTotalConDescuento = (precioTotal >= 100) ? precioTotal - precioTotal * POR_CIENTO_DESCUENTO / 100
-				: precioTotal;
-		/*
-		 * Definimos un String que muestre un texto al que le concatenaremos otra cadena
-		 * de texto (mediante otro ternario con la misma condición que el anterior) en
-		 * caso de que se cumpla la condición, si no se cumple no mostrará nada más
-		 */
-		aplicoDescuento = "El precio total de las entradas sería de " + precioTotal + " €."
-				+ ((precioTotal >= 100)
-						? "\nAl superar la cantidad de 100€, le aplicaremos un descuento del 5% y se lo dejaríamos en "
-								+ precioTotalConDescuento + " €"
-						: "");
-		// Mostramos el resultado
-		System.out.println(aplicoDescuento);
+		System.out
+				.println("El precio total de las entradas sería de " + precioTotal + " €."
+						+ ((precioTotal >= 100) ? "\nAl superar la cantidad de 100€, le aplicaremos un descuento del "
+								+ POR_CIENTO_DESCUENTO + " % y se lo dejaríamos en " + precioTotalConDescuento + " €"
+								: ""));
 		// Cerramos el scanner
 		sc.close();
 	}
